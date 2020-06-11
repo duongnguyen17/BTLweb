@@ -9,7 +9,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Soccer :: Project List</title>
+<title>Wallet List</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -28,8 +28,9 @@
 </div>
 
 <div id="main_content">
+    <?php include "./side-bar.html" ?>
 
-    <div id="header_top" class="header_top">
+    <!-- <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
                 <a class="header-brand" href="index-2.html"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
@@ -325,7 +326,7 @@
                 <li><a href="javascript:void(0)"><i class="fa fa-tag"></i><span>ContactUs</span></a></li>
             </ul>
         </nav>        
-    </div>
+    </div> -->
 
     <div class="page">
         <div id="page_top" class="section-body top_dark">
@@ -333,7 +334,7 @@
                 <div class="page-header">
                     <div class="left">
                         <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Project</h1>                        
+                        <h1 class="page-title">Wallet List</h1>                        
                     </div>
                     <div class="right">
                         <div class="input-icon xs-hide mr-4">

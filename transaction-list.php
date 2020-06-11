@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<!-- soccer/project/project-todo.html  07 Jan 2020 03:41:29 GMT -->
+<!-- soccer/project/project-ticket.html  07 Jan 2020 03:41:12 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,7 +9,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Soccer :: Project Todo</title>
+<title>Transaction List</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -30,7 +30,8 @@
 
 <div id="main_content">
 
-    <div id="header_top" class="header_top">
+    <?php include "./side-bar.html" ?>
+    <!-- <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
                 <a class="header-brand" href="index-2.html"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
@@ -300,10 +301,10 @@
                 <li><a href="index-2.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>                        
                 <li><a href="wallet-list.html"><i class="fa fa-list-ol"></i><span>Wallet List</span></a></li>
                 <li><a href="project-taskboard.html"><i class="fa fa-calendar-check-o"></i><span>Taskboard</span></a></li>
-                <li><a href="project-ticket.html"><i class="fa fa-list-ul"></i><span>Ticket List</span></a></li>
+                <li class="active"><a href="project-ticket.html"><i class="fa fa-list-ul"></i><span>Ticket List</span></a></li>
                 <li><a href="project-ticket-details.html"><i class="icon-tag"></i><span>Ticket Details</span></a></li>
                 <li><a href="project-clients.html"><i class="fa fa-user"></i><span>Clients</span></a></li>
-                <li class="active"><a href="project-todo.html"><i class="fa fa-check-square-o"></i><span>Todo List</span></a></li>
+                <li><a href="project-todo.html"><i class="fa fa-check-square-o"></i><span>Todo List</span></a></li>
                 <li class="g_heading">App</li>
                 <li><a href="app-calendar.html"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
                 <li><a href="app-chat.html"><i class="fa fa-comments"></i><span>Chat</span></a></li>
@@ -326,7 +327,7 @@
                 <li><a href="javascript:void(0)"><i class="fa fa-tag"></i><span>ContactUs</span></a></li>
             </ul>
         </nav>        
-    </div>
+    </div> -->
 
     <div class="page">
         <div id="page_top" class="section-body top_dark">
@@ -334,8 +335,7 @@
                 <div class="page-header">
                     <div class="left">
                         <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Todo List</h1>
-                        
+                        <h1 class="page-title">Transaction List</h1>                        
                     </div>
                     <div class="right">
                         <div class="input-icon xs-hide mr-4">
@@ -467,206 +467,224 @@
                 </div>
             </div>
         </div>
-        <div class="section-body">
-            <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center">
-                    <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#todo-list">ToDo List</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#todo-add">Add Todo</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <div class="section-body mt-3">
             <div class="container-fluid">
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="todo-list" role="tabpanel">
+                <div class="row clearfix">
+                    <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="table-responsive todo_list">
-                                    <table class="table table-hover table-striped table-vcenter mb-0 text-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th class="w150 text-right">Due</th>
-                                                <th class="w100">Priority</th>
-                                                <th class="w80"><i class="icon-user"></i></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                        <span class="custom-control-label">Report Panel Usag</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">Feb 12-2019</td>
-                                                <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                <td>
-                                                    <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                        <span class="custom-control-label">Report Panel Usag</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">Feb 18-2019</td>
-                                                <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                <td>
-                                                    <img src="assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                        <span class="custom-control-label">New logo design for Angular Admin</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">March 02-2019</td>
-                                                <td><span class="tag tag-success ml-0 mr-0">High</span></td>
-                                                <td>
-                                                    <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                        <span class="custom-control-label">Report Panel Usag</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">Feb 12-2019</td>
-                                                <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                <td>
-                                                    <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                        <span class="custom-control-label">Report Panel Usag</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">Feb 18-2019</td>
-                                                <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                <td>
-                                                    <img src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                        <span class="custom-control-label">New logo design for Angular Admin</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">March 02-2019</td>
-                                                <td><span class="tag tag-success ml-0 mr-0">High</span></td>
-                                                <td>
-                                                    <span class="avatar avatar-blue"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                        <span class="custom-control-label">Design PSD files for Angular Admin</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">March 20-2019</td>
-                                                <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                <td>
-                                                    <img src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                        <span class="custom-control-label">Design PSD files for Angular Admin</span>
-                                                    </label>
-                                                </td>
-                                                <td class="text-right">March 20-2019</td>
-                                                <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                <td>
-                                                    <img src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-4 col-sm-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="id">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Priority">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Department">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Agent">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" data-provide="datepicker" placeholder=" Start Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" data-provide="datepicker" placeholder=" End Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1 col-md-4 col-sm-6">
+                                        <a href="javascript:void(0);" class="btn btn-primary btn-block" title="">Search</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="todo-add" role="tabpanel">
+                    <div class="col-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Add Todo</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped table-vcenter mb-0 text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="5">Ticket Detail</th>
+                                            <th colspan="3">Activity</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="w30">&nbsp;</th>
+                                            <th>ID</th>
+                                            <th>Title</th>
+                                            <th>Priority</th>
+                                            <th>Department</th>
+                                            <th>Agent</th>
+                                            <th>Date</th>
+                                            <th>Activity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-5258</a></td>
+                                            <td><span>It is a long established fact that a reader</span></td>
+                                            <td><span class="tag tag-default">lower</span></td>
+                                            <td><span>Pre-Sales</span></td>
+                                            <td><span>Archie Cantones</span></td>
+                                            <td><span>6 hours ago</span></td>
+                                            <td>No reply yet</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-8793</a></td>
+                                            <td><span>Measures your Current Assets / Current</span></td>
+                                            <td><span class="tag tag-danger">High</span></td>
+                                            <td><span>Pre-Sales</span></td>
+                                            <td><span>Rose Orcullo</span></td>
+                                            <td><span>9 hours ago</span></td>
+                                            <td>2 reply</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-2500</a></td>
+                                            <td><span>There are many variations of passages</span></td>
+                                            <td><span class="tag tag-info">Medium</span></td>
+                                            <td><span>Pre-Sales</span></td>
+                                            <td><span>Charize Cericoz</span></td>
+                                            <td><span>10 hours ago</span></td>
+                                            <td>1 reply</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-9465</a></td>
+                                            <td><span>Measures your Current Assets / Current</span></td>
+                                            <td><span class="tag tag-default">lower</span></td>
+                                            <td><span>Payment</span></td>
+                                            <td><span>Billie Ko</span></td>
+                                            <td><span>23-01-2019</span></td>
+                                            <td>No reply yet</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-1515</a></td>
+                                            <td><span>Contrary to popular belief, Lorem Ipsum</span></td>
+                                            <td><span class="tag tag-info">Medium</span></td>
+                                            <td><span>Sales</span></td>
+                                            <td><span>Hamza Macasindil</span></td>
+                                            <td><span>22-01-2019</span></td>
+                                            <td>No reply yet</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-2589</a></td>
+                                            <td><span>It uses a dictionary of over 200 Latin</span></td>
+                                            <td><span class="tag tag-info">Medium</span></td>
+                                            <td><span>Technical</span></td>
+                                            <td><span>Dyanne Aceron</span></td>
+                                            <td><span>28-01-2019</span></td>
+                                            <td>5 reply</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-8793</a></td>
+                                            <td><span>Measures your Current Assets / Current</span></td>
+                                            <td><span class="tag tag-danger">High</span></td>
+                                            <td><span>Pre-Sales</span></td>
+                                            <td><span>Rose Orcullo</span></td>
+                                            <td><span>9 hours ago</span></td>
+                                            <td>2 reply</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-2500</a></td>
+                                            <td><span>There are many variations of passages</span></td>
+                                            <td><span class="tag tag-info">Medium</span></td>
+                                            <td><span>Pre-Sales</span></td>
+                                            <td><span>Charize Cericoz</span></td>
+                                            <td><span>10 hours ago</span></td>
+                                            <td>1 reply</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-9465</a></td>
+                                            <td><span>Measures your Current Assets / Current</span></td>
+                                            <td><span class="tag tag-default">lower</span></td>
+                                            <td><span>Payment</span></td>
+                                            <td><span>Billie Ko</span></td>
+                                            <td><span>23-01-2019</span></td>
+                                            <td>No reply yet</td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <td>
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                                                    <span class="custom-control-label">&nbsp;</span>
+                                                </label>
+                                            </td> -->
+                                            <td><a href="#">ASD-4569</a></td>
+                                            <td><span>The standard chunk of Lorem Ipsum used</span></td>
+                                            <td><span class="tag tag-danger">High</span></td>
+                                            <td><span>Technical</span></td>
+                                            <td><span>Dyanne Aceron</span></td>
+                                            <td><span>02-02-2019</span></td>
+                                            <td>3 reply</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <form class="card-body">
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Todo Name <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Priority <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control show-tick">
-                                            <option>Select</option>
-                                            <option>High</option>
-                                            <option>Medium</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Select Team <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control show-tick">
-                                            <option>Select</option>
-                                            <option>John Smith</option>
-                                            <option>Claire Peters</option>
-                                            <option>Allen Collins</option>
-                                            <option>Cory Carter</option>
-                                            <option>Rochelle Barton</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Description <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Due <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <div class="input-daterange input-group" data-provide="datepicker">
-                                            <input type="text" class="form-control" name="start">
-                                            <span class="input-group-addon"> to </span>
-                                            <input type="text" class="form-control" name="end">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label"></label>
-                                    <div class="col-md-7">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -676,22 +694,72 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <a href="templateshub.net">Templates Hub</a>
-                        </div>
                         <div class="col-md-6 col-sm-12 text-md-right">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="doc/index.html">Documentation</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addtransaction"><i class="fe fe-plus mr-2"></i>Add</button>
                             </ul>
                         </div>
                     </div>
                 </div>
             </footer>
         </div>
+
+        <!-- Add New Transaction -->
+        <div class="modal fade" id="addtransaction" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="title" id="defaultModalLabel">Add New Task</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row clearfix">
+                            <div class="col-12">
+                                <div class="form-group">                                    
+                                    <input type="text" class="form-control" placeholder="Task no.">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">                                   
+                                    <input type="text" class="form-control" placeholder="Job title">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <select class="form-control show-tick">
+                                        <option>Select Team</option>
+                                        <option>John Smith</option>
+                                        <option>Claire Peters</option>
+                                        <option>Allen Collins</option>
+                                        <option>Cory Carter</option>
+                                        <option>Rochelle Barton</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label>Range</label>
+                                <div class="input-daterange input-group" data-provide="datepicker">
+                                    <input type="text" class="form-control" name="start">
+                                    <span class="input-group-addon"> to </span>
+                                    <input type="text" class="form-control" name="end">
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Add</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 
 <script src="assets/bundles/lib.vendor.bundle.js"></script>
 
@@ -700,5 +768,5 @@
 <script src="assets/js/core.js"></script>
 </body>
 
-<!-- soccer/project/project-todo.html  07 Jan 2020 03:41:29 GMT -->
+<!-- soccer/project/project-ticket.html  07 Jan 2020 03:41:12 GMT -->
 </html>
