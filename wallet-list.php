@@ -52,7 +52,6 @@
             </div>
         </div>
     </div>
-
     <div id="rightsidebar" class="right_sidebar">
         <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
         <div class="p-4">
@@ -192,7 +191,6 @@
             </div>
         </div>
     </div>
-
     <div class="theme_div">
         <div class="card">
             <div class="card-body">
@@ -213,7 +211,6 @@
             </div>
         </div>
     </div>
-
     <div class="user_div">
         <h5 class="brand-name mb-4">Soccer<a href="javascript:void(0)" class="user_btn"><i class="icon-logout"></i></a></h5>
         <div class="card-body">
@@ -291,7 +288,6 @@
             </ul>
         </div>
     </div>
-
     <div id="left-sidebar" class="sidebar ">
         <h5 class="brand-name">Soccer <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
         <nav id="left-sidebar-nav" class="sidebar-nav">
@@ -341,7 +337,10 @@
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
                         </div>
-                        <div class="notification d-flex">
+                        <div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addtransaction"><i class="fe fe-plus mr-2"></i>Add</button>
+                        </div>
+                        <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -461,12 +460,12 @@
                                     <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -485,7 +484,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="section-body mt-3">
             <div class="container-fluid">
                 <div class="tab-content">
@@ -878,7 +877,7 @@
                 </div>
             </div>            
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -895,9 +894,63 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
     </div>    
 </div>
+
+<!-- Add New Wallet -->
+<div class="modal fade" id="addtransaction" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="title" id="defaultModalLabel">Add New Task</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row clearfix">
+                            <div class="col-12">
+                                <div class="form-group">                                    
+                                    <input type="text" class="form-control" placeholder="Task no.">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">                                   
+                                    <input type="text" class="form-control" placeholder="Job title">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <select class="form-control show-tick">
+                                        <option>Select Team</option>
+                                        <option>John Smith</option>
+                                        <option>Claire Peters</option>
+                                        <option>Allen Collins</option>
+                                        <option>Cory Carter</option>
+                                        <option>Rochelle Barton</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label>Range</label>
+                                <div class="input-daterange input-group" data-provide="datepicker">
+                                    <input type="text" class="form-control" name="start">
+                                    <span class="input-group-addon"> to </span>
+                                    <input type="text" class="form-control" name="end">
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Add</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 <script src="assets/bundles/lib.vendor.bundle.js"></script>

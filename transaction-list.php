@@ -342,7 +342,10 @@
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
                         </div>
-                        <div class="notification d-flex">
+                        <div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addtransaction"><i class="fe fe-plus mr-2"></i>Add</button>
+                        </div>
+                        <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -462,7 +465,7 @@
                                     <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -690,7 +693,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -702,7 +705,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
 
         <!-- Add New Transaction -->
         <div class="modal fade" id="addtransaction" tabindex="-1" role="dialog">
@@ -768,5 +771,5 @@
 <script src="assets/js/core.js"></script>
 </body>
 
-<!-- soccer/project/project-ticket.html  07 Jan 2020 03:41:12 GMT -->
+
 </html>

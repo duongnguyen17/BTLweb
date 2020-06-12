@@ -9,7 +9,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Soccer :: Project Todo</title>
+<title>Plan List</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -343,7 +343,10 @@
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
                         </div>
-                        <div class="notification d-flex">
+                        <div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addplan"><i class="fe fe-plus mr-2"></i>Add</button>
+                        </div>
+                        <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -463,12 +466,12 @@
                                     <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center">
                     <ul class="nav nav-tabs page-header-tab">
@@ -477,7 +480,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="section-body mt-3">
             <div class="container-fluid">
                 <div class="tab-content">
@@ -673,7 +676,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -685,7 +688,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
         <!-- Add New Plan -->
         <div class="modal fade" id="addplan" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
