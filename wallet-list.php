@@ -22,13 +22,13 @@
 
 <body class="font-montserrat">
 <!-- Page Loader -->
-<div class="page-loader-wrapper">
+<!-- <div class="page-loader-wrapper">
     <div class="loader">
     </div>
-</div>
-
+</div> -->
+<?php include "./side-bar.html" ?>
 <div id="main_content">
-    <?php include "./side-bar.html" ?>
+    
 
     <!-- <div id="header_top" class="header_top">
         <div class="container">
@@ -338,7 +338,7 @@
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addtransaction"><i class="fe fe-plus mr-2"></i>Add</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addwallet">Add</button>
                         </div>
                         <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
@@ -490,57 +490,46 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="Project-OnGoing" role="tabpanel">
                         <div class="row">
+
+                            <!--thẻ ví-->
                             <div class="col-lg-6 col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">New Admin Design</h3>
+                                        <h3 class="card-title">Tên ví</h3>
                                         <div class="card-options">
-                                            <label class="custom-switch m-0">
+                                            <!-- <label class="custom-switch m-0">
                                                 <input type="checkbox" value="1" class="custom-switch-input" checked>
                                                 <span class="custom-switch-indicator"></span>
-                                            </label>
+                                            </label> -->
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <span class="tag tag-blue mb-3">Web Design</span>
-                                        <p>Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis temporibus!</p>
+                                        <span class="tag tag-blue mb-3">Tên gmail</span>
+                                        <span class="tag tag-yellow mb-3">Owner</span>
                                         <div class="row">
-                                            <div class="col-5 py-1"><strong>Created:</strong></div>
-                                            <div class="col-7 py-1">09 Jun 2019 11:32AM</div>
-                                            <div class="col-5 py-1"><strong>Creator:</strong></div>
-                                            <div class="col-7 py-1">Nathan Guerrero</div>
-                                            <div class="col-5 py-1"><strong>Question:</strong></div>
-                                            <div class="col-7 py-1"><strong>23</strong></div>
-                                            <div class="col-5 py-1"><strong>Comments:</strong></div>
-                                            <div class="col-7 py-1"><strong>32</strong></div>
-                                            <div class="col-5 py-1"><strong>Bug:</strong></div>
-                                            <div class="col-7 py-1"><strong>5</strong></div>
-                                            <div class="col-5 py-1"><strong>Team:</strong></div>
-                                            <div class="col-7 py-1">
-                                                <div class="avatar-list avatar-list-stacked">
-                                                    <img class="avatar avatar-sm" src="assets/images/xs/avatar1.jpg" data-toggle="tooltip" title="" data-original-title="Avatar Name"/>
-                                                    <img class="avatar avatar-sm" src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" title="" data-original-title="Avatar Name"/>
-                                                    <img class="avatar avatar-sm" src="assets/images/xs/avatar3.jpg" data-toggle="tooltip" title="" data-original-title="Avatar Name"/>
-                                                    <img class="avatar avatar-sm" src="assets/images/xs/avatar4.jpg" data-toggle="tooltip" title="" data-original-title="Avatar Name"/>
-                                                    <img class="avatar avatar-sm" src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" title="" data-original-title="Avatar Name"/>
-                                                    <span class="avatar avatar-sm">+8</span>
-                                                </div>
-                                            </div>
+                                            <div class="col-5 py-1"><strong>Đơn vị tiền</strong></div>
+                                            <div class="col-7 py-1">VND</div>
+                                            <div class="col-5 py-1"><strong>Số dư ban đầu</strong></div>
+                                            <div class="col-7 py-1">12000000</div>
+                                            <div class="col-5 py-1"><strong>Số dư hiện tại</strong></div>
+                                            <div class="col-7 py-1">23000</div>
+                                            <div class="col-10 py-1"><strong> Include to Total</strong></div>
+                                            
+                                            <div class="col-10 py-1"><strong>Not include to Total</strong></div>
                                         </div>                                        
                                     </div>
-                                    <div class="card-footer">
-                                        <div class="clearfix">
-                                            <div class="float-left"><strong>15%</strong></div>
-                                            <div class="float-right"><small class="text-muted">Progress</small></div>
+                                    <div class="card-footer row">
+                                        <div class="col-5">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addwallet">Edit</button>
                                         </div>
-                                        <div class="progress progress-xs">
-                                            <div class="progress-bar bg-red" role="progressbar" style="width: 15%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="col-5">
+                                            <button type="button" class="btn btn-primary"  >Delete</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12">
+                            <!-- <div class="col-lg-6 col-md-12">
                                 <div class="card">
                                     <div class="card-header">
                                         <h3 class="card-title">Job Portal Web App</h3>
@@ -787,7 +776,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="tab-pane fade" id="Project-UpComing" role="tabpanel">
@@ -899,20 +888,20 @@
 </div>
 
 <!-- Add New Wallet -->
-<div class="modal fade" id="addtransaction" tabindex="-1" role="dialog">
+<div class="modal fade" id="addwallet" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h6 class="title" id="defaultModalLabel">Add New Task</h6>
+                        <h6 class="title" id="defaultModalLabel">Add New Wallet</h6>
                     </div>
                     <div class="modal-body">
                         <div class="row clearfix">
                             <div class="col-12">
                                 <div class="form-group">                                    
-                                    <input type="text" class="form-control" placeholder="Task no.">
+                                    <input type="text" class="form-control" placeholder="Tên ví">
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="form-group">                                   
                                     <input type="text" class="form-control" placeholder="Job title">
                                 </div>
@@ -921,11 +910,15 @@
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Description"></textarea>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
+                            </div> -->
+                            <div class="col-12 row" >
+                                <div class="form-group col-lg-8 col-md-12">
+                                    <input type="text" class="form-control" placeholder="Số dư ban đầu">
+                                </div>
+                                <div class="form-group col-lg-4 col-md-12">
                                     <select class="form-control show-tick">
-                                        <option>Select Team</option>
+                                        <option>Đơn vị tiền tệ</option>
+                                        <!--dưới này sẽ đưa ra các đơn vị tiền tệ có trong CSDL ra để người dùng chọn-->
                                         <option>John Smith</option>
                                         <option>Claire Peters</option>
                                         <option>Allen Collins</option>
@@ -935,13 +928,20 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <label>Range</label>
+                                <!-- <label>Range</label>
                                 <div class="input-daterange input-group" data-provide="datepicker">
                                     <input type="text" class="form-control" name="start">
                                     <span class="input-group-addon"> to </span>
                                     <input type="text" class="form-control" name="end">
+                                </div> -->
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" />
+                                        <span class="custom-control-label">Include to Total</span>
+                                    </label>
                                 </div>
-                            </div>                    
+                            </div> 
+                            
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -958,5 +958,5 @@
 <script src="assets/js/core.js"></script>
 </body>
 
-<!-- soccer/project/project-list.html  07 Jan 2020 03:41:02 GMT -->
+
 </html>

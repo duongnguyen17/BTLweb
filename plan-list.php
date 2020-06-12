@@ -23,14 +23,14 @@
 
 <body class="font-montserrat">
 <!-- Page Loader -->
-<div class="page-loader-wrapper">
+<!-- <div class="page-loader-wrapper">
     <div class="loader">
     </div>
-</div>
-
+</div> -->
+<?php include"./side-bar.html" ?>
 <div id="main_content">
 
-    <?php include"./side-bar.html" ?>
+    
     <!-- <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
@@ -752,5 +752,4 @@
 <script src="assets/js/core.js"></script>
 </body>
 
-<!-- soccer/project/project-todo.html  07 Jan 2020 03:41:29 GMT -->
 </html>

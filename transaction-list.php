@@ -23,14 +23,14 @@
 
 <body class="font-montserrat">
 <!-- Page Loader -->
-<div class="page-loader-wrapper">
+<!-- <div class="page-loader-wrapper">
     <div class="loader">
     </div>
-</div>
-
+</div> -->
+<?php include "./side-bar.html" ?>
 <div id="main_content">
 
-    <?php include "./side-bar.html" ?>
+    
     <!-- <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
@@ -338,12 +338,23 @@
                         <h1 class="page-title">Transaction List</h1>                        
                     </div>
                     <div class="right">
-                        <div class="input-icon xs-hide mr-4">
+                        <!-- <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
+                        </div> -->
+                        <div class="input-icon xs-hide mr-4">
+                            <select class="form-control show-tick">
+                                <option>Total</option>
+                                <!--dưới này sẽ đưa ra các ví có trong CSDL ra để người dùng chọn-->
+                                <option>John Smith</option>
+                                <option>Claire Peters</option>
+                                <option>Allen Collins</option>
+                                <option>Cory Carter</option>
+                                <option>Rochelle Barton</option>
+                            </select>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addtransaction"><i class="fe fe-plus mr-2"></i>Add</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addtransaction">Add</button>
                         </div>
                         <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
@@ -477,17 +488,25 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-1 col-md-4 col-sm-6">
+                                    <div class="col-lg-2 col-md-4 col-sm-6">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="id">
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-4 col-sm-6">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Priority">
+                                        <div class="input-group ">
+                                            <select class="form-control show-tick">
+                                                <option>All Category</option>
+                                                <!--dưới này sẽ đưa ra các category có trong CSDL ra để người dùng chọn-->
+                                                <option>John Smith</option>
+                                                <option>Claire Peters</option>
+                                                <option>Allen Collins</option>
+                                                <option>Cory Carter</option>
+                                                <option>Rochelle Barton</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <!-- <div class="col-lg-2 col-md-4 col-sm-6">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Department">
                                         </div>
@@ -496,7 +515,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Agent">
                                         </div>
-                                    </div>
+                                    </div>  -->
                                     <div class="col-lg-2 col-md-4 col-sm-6">
                                         <div class="input-group">
                                             <input type="text" class="form-control" data-provide="datepicker" placeholder=" Start Date">
@@ -519,19 +538,19 @@
                             <div class="table-responsive">
                                 <table class="table table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
-                                        <tr>
+                                        <!-- <tr>
                                             <th colspan="5">Ticket Detail</th>
                                             <th colspan="3">Activity</th>
-                                        </tr>
+                                        </tr> -->
                                         <tr>
-                                            <th class="w30">&nbsp;</th>
+                                            <!-- <th class="w30">&nbsp;</th> -->
                                             <th>ID</th>
-                                            <th>Title</th>
-                                            <th>Priority</th>
-                                            <th>Department</th>
-                                            <th>Agent</th>
+                                            <th>Wallet</th>
+                                            <th>Category</th>
+                                            <th>Amount</th>
+                                            <!-- <th>Agent</th> -->
                                             <th>Date</th>
-                                            <th>Activity</th>
+                                            <th>Note</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -542,21 +561,26 @@
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
                                             </td> -->
-                                            <td><a href="#">ASD-5258</a></td>
-                                            <td><span>It is a long established fact that a reader</span></td>
-                                            <td><span class="tag tag-default">lower</span></td>
+                                            <td><span>12345</span></td>
+                                            <!-- <td><span>It is a long established fact that a reader</span></td>
+                                            <td><span class="tag tag-default">lower</span></td> 
                                             <td><span>Pre-Sales</span></td>
                                             <td><span>Archie Cantones</span></td>
                                             <td><span>6 hours ago</span></td>
-                                            <td>No reply yet</td>
+                                            <td>No reply yet</td> -->
+                                            <td><span>tên ví</span></td>
+                                            <td><span>category</span></td>
+                                            <td><span>giá trị(12000)</span></td>
+                                            <td><span>Ngày</span></td>
+                                            <td><span>note</span></td>
                                         </tr>
-                                        <tr>
-                                            <!-- <td>
+                                        <!-- <tr>
+                                            <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td>
                                             <td><a href="#">ASD-8793</a></td>
                                             <td><span>Measures your Current Assets / Current</span></td>
                                             <td><span class="tag tag-danger">High</span></td>
@@ -566,12 +590,12 @@
                                             <td>2 reply</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                             <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td> 
                                             <td><a href="#">ASD-2500</a></td>
                                             <td><span>There are many variations of passages</span></td>
                                             <td><span class="tag tag-info">Medium</span></td>
@@ -581,12 +605,12 @@
                                             <td>1 reply</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                             <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td> 
                                             <td><a href="#">ASD-9465</a></td>
                                             <td><span>Measures your Current Assets / Current</span></td>
                                             <td><span class="tag tag-default">lower</span></td>
@@ -596,12 +620,12 @@
                                             <td>No reply yet</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                            <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td>
                                             <td><a href="#">ASD-1515</a></td>
                                             <td><span>Contrary to popular belief, Lorem Ipsum</span></td>
                                             <td><span class="tag tag-info">Medium</span></td>
@@ -611,12 +635,12 @@
                                             <td>No reply yet</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                            <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td> 
                                             <td><a href="#">ASD-2589</a></td>
                                             <td><span>It uses a dictionary of over 200 Latin</span></td>
                                             <td><span class="tag tag-info">Medium</span></td>
@@ -626,12 +650,12 @@
                                             <td>5 reply</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                             <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td>
                                             <td><a href="#">ASD-8793</a></td>
                                             <td><span>Measures your Current Assets / Current</span></td>
                                             <td><span class="tag tag-danger">High</span></td>
@@ -641,12 +665,12 @@
                                             <td>2 reply</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                            <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td> 
                                             <td><a href="#">ASD-2500</a></td>
                                             <td><span>There are many variations of passages</span></td>
                                             <td><span class="tag tag-info">Medium</span></td>
@@ -656,12 +680,12 @@
                                             <td>1 reply</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                            <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td>
                                             <td><a href="#">ASD-9465</a></td>
                                             <td><span>Measures your Current Assets / Current</span></td>
                                             <td><span class="tag tag-default">lower</span></td>
@@ -671,12 +695,12 @@
                                             <td>No reply yet</td>
                                         </tr>
                                         <tr>
-                                            <!-- <td>
+                                            <td>
                                                 <label class="custom-control custom-checkbox">
                                                     <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
                                                     <span class="custom-control-label">&nbsp;</span>
                                                 </label>
-                                            </td> -->
+                                            </td> 
                                             <td><a href="#">ASD-4569</a></td>
                                             <td><span>The standard chunk of Lorem Ipsum used</span></td>
                                             <td><span class="tag tag-danger">High</span></td>
@@ -684,7 +708,7 @@
                                             <td><span>Dyanne Aceron</span></td>
                                             <td><span>02-02-2019</span></td>
                                             <td>3 reply</td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
@@ -712,26 +736,56 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h6 class="title" id="defaultModalLabel">Add New Task</h6>
+                        <h6 class="title" id="defaultModalLabel">Add New Transaction</h6>
                     </div>
                     <div class="modal-body">
                         <div class="row clearfix">
                             <div class="col-12">
-                                <div class="form-group">                                    
-                                    <input type="text" class="form-control" placeholder="Task no.">
+                                <!-- <div class="form-group">                                    
+                                    <input type="text" class="form-control" placeholder="Tên ví">
+                                </div> -->
+                                <div class="form-group ">
+                                    <select class="form-control show-tick">
+                                        <option>tên ví</option>
+                                        <!--dưới này sẽ đưa ra các ví có trong CSDL ra để người dùng chọn-->
+                                        <option>John Smith</option>
+                                        <option>Claire Peters</option>
+                                        <option>Allen Collins</option>
+                                        <option>Cory Carter</option>
+                                        <option>Rochelle Barton</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-group">                                   
-                                    <input type="text" class="form-control" placeholder="Job title">
+                                <div class="form-group ">
+                                    <select class="form-control show-tick">
+                                        <option>Category</option>
+                                        <!--dưới này sẽ đưa ra các category có trong CSDL ra để người dùng chọn-->
+                                        <option>John Smith</option>
+                                        <option>Claire Peters</option>
+                                        <option>Allen Collins</option>
+                                        <option>Cory Carter</option>
+                                        <option>Rochelle Barton</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <!-- <div class="form-group">
+                                    <textarea class="form-control" placeholder="Description"></textarea>
+                                </div> -->
+                                <div class="form-group">                                    
+                                    <input type="text" class="form-control" placeholder="Giá trị giao dịch">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" data-provide="datepicker" placeholder=" Date">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Description"></textarea>
+                                    <textarea class="form-control" placeholder="Note"></textarea>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="form-group">
                                     <select class="form-control show-tick">
                                         <option>Select Team</option>
@@ -750,7 +804,7 @@
                                     <span class="input-group-addon"> to </span>
                                     <input type="text" class="form-control" name="end">
                                 </div>
-                            </div>                    
+                            </div>                     -->
                         </div>
                     </div>
                     <div class="modal-footer">

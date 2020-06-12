@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -43,10 +43,10 @@
                         <h1 class="page-title">Report</h1>                        
                     </div>
                     <div class="right">
-                        <div class="input-icon xs-hide mr-4">
+                        <!-- <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
-                        </div>
+                        </div> -->
                         <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
@@ -168,6 +168,17 @@
                                 </div>
                             </div>
                         </div> -->
+                        <div class="input-icon xs-hide mr-4">
+                            <select class="form-control show-tick">
+                                <option>Total</option>
+                                <!--dưới này sẽ đưa ra các ví có trong CSDL ra để người dùng chọn-->
+                                <option>John Smith</option>
+                                <option>Claire Peters</option>
+                                <option>Allen Collins</option>
+                                <option>Cory Carter</option>
+                                <option>Rochelle Barton</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -826,5 +837,5 @@
 <script src="assets/js/page/project-index.js"></script>
 </body>
 
-<!-- soccer/project/  07 Jan 2020 03:37:22 GMT -->
+
 </html>
