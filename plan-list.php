@@ -341,10 +341,10 @@
                     <div class="right">
                         <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-icon-addon"><i class="fe fe-search"></i></span>
+                            <span class="input-icon-addon"></span>
                         </div>
                         <div>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addplan"><i class="fe fe-plus mr-2"></i>Add</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addplan">Add</button>
                         </div>
                         <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
@@ -492,9 +492,9 @@
                                         <thead>
                                             <tr>
                                                 <th></th>
-                                                <th class="w150 text-right">Due</th>
-                                                <th class="w100">Priority</th>
-                                                <th class="w80"><i class="icon-user"></i></th>
+                                                <th class="w300 text-right">Date</th>
+                                                <th class="w200 text-center">Priority</th>
+                                                <!-- <th class="w80"><i class="icon-user"></i></th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -506,12 +506,12 @@
                                                     </label>
                                                 </td>
                                                 <td class="text-right">Feb 12-2019</td>
-                                                <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                <td>
+                                                <td class="text-center"><span class="tag tag-success ml-0 mr-0 ">HIGH</span></td>
+                                                <!-- <td>
                                                     <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                </td>
+                                                </td> -->
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td>
                                                     <label class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
@@ -601,7 +601,7 @@
                                                 <td>
                                                     <img src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -694,11 +694,11 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h6 class="title" id="defaultModalLabel">Add New Task</h6>
+                        <h6 class="title" id="defaultModalLabel">Add New Plan</h6>
                     </div>
                     <div class="modal-body">
                         <div class="row clearfix">
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="form-group">                                    
                                     <input type="text" class="form-control" placeholder="Task no.">
                                 </div>
@@ -707,7 +707,7 @@
                                 <div class="form-group">                                   
                                     <input type="text" class="form-control" placeholder="Job title">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="Description"></textarea>
@@ -715,24 +715,26 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <select class="form-control show-tick">
-                                        <option>Select Team</option>
-                                        <option>John Smith</option>
-                                        <option>Claire Peters</option>
-                                        <option>Allen Collins</option>
-                                        <option>Cory Carter</option>
-                                        <option>Rochelle Barton</option>
-                                    </select>
+                                    <input type="text" class="form-control" data-provide="datepicker" placeholder=" Date">
                                 </div>
                             </div>
                             <div class="col-12">
+                                <div class="form-group">
+                                    <select class="form-control show-tick">
+                                        <option>HIGH</option>
+                                        <option>MEDIUM</option>
+                                        <option>LOW</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12">
                                 <label>Range</label>
                                 <div class="input-daterange input-group" data-provide="datepicker">
                                     <input type="text" class="form-control" name="start">
                                     <span class="input-group-addon"> to </span>
                                     <input type="text" class="form-control" name="end">
                                 </div>
-                            </div>                    
+                            </div>                     -->
                         </div>
                     </div>
                     <div class="modal-footer">

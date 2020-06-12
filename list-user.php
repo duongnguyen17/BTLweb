@@ -9,7 +9,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Soccer :: Project Clients</title>
+<title>List User</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -23,14 +23,14 @@
 
 <body class="font-montserrat">
 <!-- Page Loader -->
-<div class="page-loader-wrapper">
+<!-- <div class="page-loader-wrapper">
     <div class="loader">
     </div>
-</div>
-
+</div> -->
+<?php include"./side-bar.html" ?>
 <div id="main_content">
 
-    <div id="header_top" class="header_top">
+    <!-- <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
                 <a class="header-brand" href="index-2.html"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
@@ -326,7 +326,7 @@
                 <li><a href="javascript:void(0)"><i class="fa fa-tag"></i><span>ContactUs</span></a></li>
             </ul>
         </nav>        
-    </div>
+    </div> -->
 
     <div class="page">
         <div id="page_top" class="section-body top_dark">
