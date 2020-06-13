@@ -524,7 +524,7 @@
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addwallet">Edit</button>
                                         </div>
                                         <div class="col-5">
-                                            <button type="button" class="btn btn-primary"  >Delete</button>
+                                            <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#sure">Delete</button>
                                         </div>
                                     </div>
                                 </div>
@@ -779,7 +779,7 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="Project-UpComing" role="tabpanel">
+                    <!-- <div class="tab-pane fade" id="Project-UpComing" role="tabpanel">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
@@ -859,7 +859,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="tab-pane fade" id="Project-add" role="tabpanel">
 
                     </div>
@@ -889,70 +889,82 @@
 
 <!-- Add New Wallet -->
 <div class="modal fade" id="addwallet" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h6 class="title" id="defaultModalLabel">Add New Wallet</h6>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row clearfix">
-                            <div class="col-12">
-                                <div class="form-group">                                    
-                                    <input type="text" class="form-control" placeholder="Tên ví">
-                                </div>
-                            </div>
-                            <!-- <div class="col-12">
-                                <div class="form-group">                                   
-                                    <input type="text" class="form-control" placeholder="Job title">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Description"></textarea>
-                                </div>
-                            </div> -->
-                            <div class="col-12 row" >
-                                <div class="form-group col-lg-8 col-md-12">
-                                    <input type="text" class="form-control" placeholder="Số dư ban đầu">
-                                </div>
-                                <div class="form-group col-lg-4 col-md-12">
-                                    <select class="form-control show-tick">
-                                        <option>Đơn vị tiền tệ</option>
-                                        <!--dưới này sẽ đưa ra các đơn vị tiền tệ có trong CSDL ra để người dùng chọn-->
-                                        <option>John Smith</option>
-                                        <option>Claire Peters</option>
-                                        <option>Allen Collins</option>
-                                        <option>Cory Carter</option>
-                                        <option>Rochelle Barton</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <!-- <label>Range</label>
-                                <div class="input-daterange input-group" data-provide="datepicker">
-                                    <input type="text" class="form-control" name="start">
-                                    <span class="input-group-addon"> to </span>
-                                    <input type="text" class="form-control" name="end">
-                                </div> -->
-                                <div class="form-group">
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" />
-                                        <span class="custom-control-label">Include to Total</span>
-                                    </label>
-                                </div>
-                            </div> 
-                            
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="title" id="defaultModalLabel">Add New Wallet</h6>
+            </div>
+            <div class="modal-body">
+                <div class="row clearfix">
+                    <div class="col-12">
+                        <div class="form-group">                                    
+                            <input type="text" class="form-control" placeholder="Tên ví">
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Add</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <!-- <div class="col-12">
+                        <div class="form-group">                                   
+                            <input type="text" class="form-control" placeholder="Job title">
+                        </div>
                     </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Description"></textarea>
+                        </div>
+                    </div> -->
+                    <div class="col-12 row" >
+                        <div class="form-group col-lg-8 col-md-12">
+                            <input type="text" class="form-control" placeholder="Số dư ban đầu">
+                        </div>
+                        <div class="form-group col-lg-4 col-md-12">
+                            <select class="form-control show-tick">
+                                <option>Đơn vị tiền tệ</option>
+                                <!--dưới này sẽ đưa ra các đơn vị tiền tệ có trong CSDL ra để người dùng chọn-->
+                                <option>John Smith</option>
+                                <option>Claire Peters</option>
+                                <option>Allen Collins</option>
+                                <option>Cory Carter</option>
+                                <option>Rochelle Barton</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <!-- <label>Range</label>
+                        <div class="input-daterange input-group" data-provide="datepicker">
+                            <input type="text" class="form-control" name="start">
+                            <span class="input-group-addon"> to </span>
+                            <input type="text" class="form-control" name="end">
+                        </div> -->
+                        <div class="form-group">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" />
+                                <span class="custom-control-label">Include to Total</span>
+                            </label>
+                        </div>
+                    </div> 
+                    
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
+    </div>
+</div>
 
-
+<div class="modal fade" id="sure" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="title" id="defaultModalLabel">Are you sure ?</h6>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Yes, delete</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="assets/bundles/lib.vendor.bundle.js"></script>
 
 <script src="assets/js/core.js"></script>

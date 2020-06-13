@@ -466,11 +466,11 @@
                 </div>
             </div>
         </div>
-        <div class="section-body mt-3">
+        <!-- <div class="section-body mt-3">
             <div class="container-fluid">
                 <div class="row clearfix">
                     <div class="col-lg-12">
-                        <!-- <div class="card">
+                        <div class="card">
                             <div class="card-body">
                                 <div class="d-md-flex justify-content-between mb-2">
                                     <ul class="nav nav-tabs b-none">
@@ -494,7 +494,45 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="section-body mt-3">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex justify-content-between">
+                                    <ul class="nav nav-tabs b-none">
+                                        <li class="nav-item"><a class="nav-link active" id="list-tab" data-toggle="tab" href="#list"><i class="fa fa-list-ul"></i> List</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="grid-tab" data-toggle="tab" href="#grid"><i class="fa fa-th"></i> Grid</a></li>
+                                        <!-- <li class="nav-item"><a class="nav-link" id="addnew-tab" data-toggle="tab" href="#addnew"><i class="fa fa-plus"></i> Add New</a></li> -->
+                                    </ul>
+                                    <!-- <div class="d-flex align-items-center sort_stat">
+                                        <div class="d-flex">
+                                            <span class="bh_income">2,5,1,8,3,6,7,5,3,6,7,5</span>
+                                            <div class="ml-2">
+                                                <p class="mb-0 font-11">MY INCOME</p>
+                                                <h5 class="font-16 mb-0">$5,510</h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ml-3">
+                                            <span class="bh_traffic">5,8,9,10,5,2,5,8,9,10</span> 
+                                            <div class="ml-2">
+                                                <p class="mb-0 font-11">SITE TRAFFIC</p>
+                                                <h5 class="font-16 mb-0">53% Up</h5>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="input-group mt-2">
+                                    <input type="text" class="form-control search" placeholder="Search...">
+                                </div> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -504,21 +542,48 @@
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="list" role="tabpanel">
                         <div class="row clearfix">
-                            <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="col-lg-12">
+                                <div class="table-responsive" id="users">
+                                    <table class="table table-hover table-vcenter text-nowrap table_custom border-style list">
+                                        <tbody>
+                                            <tr class="" >
+                                                <td class="width35 hidden-xs">
+                                                    <img class="rounded-circle img-thumbnail w100" src="assets/images/sm/avatar1.jpg" alt="">
+                                                </td>
+                                                <td class="">
+                                                    <div class="col-lg-3 text-center">
+                                                    <span>jason-porter@info.com</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-default btn-sm">Feedback</button>
+                                                </td>                                               
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="tab-pane fade" id="grid" role="tabpanel">
+                        <div class="row row-deck">
+                            <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center ribbon">
-                                        <div class="ribbon-box green">New</div>
+                                        <!-- <div class="ribbon-box green">New</div> -->
                                         <img class="rounded-circle img-thumbnail w100" src="assets/images/sm/avatar1.jpg" alt="">
-                                        <h6 class="mt-3 mb-0">Michelle Green</h6>
+                                        <!-- <h6 class="mt-3 mb-0">Michelle Green</h6> -->
                                         <span>jason-porter@info.com</span>
                                         <ul class="mt-3 list-unstyled d-flex justify-content-center">
-                                            <li><a class="p-3" target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <!-- <li><a class="p-3" target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
                                             <li><a class="p-3" target="_blank" href="#"><i class="fa fa-slack"></i></a></li>
-                                            <li><a class="p-3" target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a class="p-3" target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li> -->
                                         </ul>
-                                        <button class="btn btn-default btn-sm">View Profile</button>
-                                        <button class="btn btn-default btn-sm">Message</button>
-                                        <div class="row text-center mt-4">
+                                        <!-- <button class="btn btn-default btn-sm">View Profile</button> -->
+                                        <button type="button" class="btn btn-primary">Feedback</button>
+                                        <!-- <div class="row text-center mt-4">
                                             <div class="col-6 border-right">
                                                 <label class="mb-0">Project</label>
                                                 <h4 class="font-18">07</h4>
@@ -527,11 +592,11 @@
                                                 <label class="mb-0">Deal</label>
                                                 <h4 class="font-18">$2,510</h4>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>    
-                            <div class="col-xl-4 col-lg-4 col-md-6">
+                            <!-- <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center ribbon">
                                         <div class="ribbon-box indigo">India</div>
@@ -717,9 +782,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
+                    
                     <!-- <div class="tab-pane fade" id="addnew" role="tabpanel">
                         <div class="row">
                             <div class="col-sm-12">

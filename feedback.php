@@ -515,7 +515,7 @@
                                 <div class="table-responsive" id="users">
                                     <table class="table table-hover table-vcenter text-nowrap table_custom border-style list">
                                         <tbody>
-                                            <tr class="">
+                                            <tr class="" >
                                                 <td class="width35 hidden-xs">
                                                     <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
                                                 </td>
@@ -565,7 +565,7 @@
                                                     <a class="btn btn-sm btn-link hidden-xs js-sweetalert" data-type="confirm" href="javascript:void(0)" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>
                                                 </td>
                                             </tr>
-                                            <tr class="">
+                                            <!-- <tr class="" >
                                                 <td class="hidden-xs">
                                                     <a href="javascript:void(0);" class="mail-star love"><i class="fa fa-heart"></i></a>
                                                 </td>
@@ -714,7 +714,7 @@
                                                     <a class="btn btn-sm btn-link" href="javascript:void(0)" data-toggle="tooltip" title="Mail"><i class="fa fa-envelope"></i></a>
                                                     <a class="btn btn-sm btn-link hidden-xs js-sweetalert" data-type="confirm" href="javascript:void(0)" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -761,7 +761,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12">
+                            <!-- <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card ">
                                     <div class="card-body">
                                         <div class="mb-3"> <img src="assets/images/sm/avatar3.jpg" class="rounded-circle w100" alt=""> </div>
@@ -907,7 +907,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

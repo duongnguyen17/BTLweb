@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+
 <head>
 <meta charset="UTF-8">
 <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -38,7 +38,7 @@ Core css
                 <a class="header-brand" href="index.php"><img src="logo.jpg" width="30" height="30"></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/user.png" alt="" data-toggle="tooltip" data-placement="right" title="User Menu"/></a>
-                    <a href="page-search.html" class="nav-link icon xs-hide"><i class="fa fa-search"></i></a>                    
+                    <!-- <a href="page-search.html" class="nav-link icon xs-hide"><i class="fa fa-search"></i></a>-->
                     <a href="app-calendar.html"  class="nav-link icon app_inbox xs-hide"><i class="fa fa-calendar"></i></a>
                     <!-- <a href="app-contact.html"  class="nav-link icon xs-hide"><i class="fa fa-id-card-o"></i></a>
                     <a href="app-chat.html"  class="nav-link icon xs-hide"><i class="fa fa-comments-o"></i></a>
@@ -220,8 +220,14 @@ Core css
         </div>
     </div> -->
 
-    <div class="user_div">
-        <h5 class="brand-name mb-4">Profile<a href="javascript:void(0)" class="user_btn"><i class="icon-logout"></i></a></h5>
+    <div class="user_div row">
+        <div class="col-sm">
+            <h5 class="brand-name mb-4">Profile</h5>
+        </div>
+        <div class="col-sm left">
+            <button type="button" class="btn btn-outline-danger"><a href="javascript:void(0)" class="user_btn"><span>Log out</span></a></button>
+        </div>
+        <hr>
         <!-- <div class="card-body">
             <a href="page-profile.html"><img class="card-profile-img" src="assets/images/sm/avatar1.jpg" alt=""></a>
             <h6 class="mb-0">Peter Richards</h6>
