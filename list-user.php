@@ -334,14 +334,14 @@
                 <div class="page-header">
                     <div class="left">
                         <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Clients</h1>                        
+                        <h1 class="page-title">List User</h1>                        
                     </div>
                     <div class="right">
                         <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
                         </div>
-                        <div class="notification d-flex">
+                        <!-- <div class="notification d-flex">
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -461,7 +461,7 @@
                                     <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -470,7 +470,7 @@
             <div class="container-fluid">
                 <div class="row clearfix">
                     <div class="col-lg-12">
-                        <div class="card">
+                        <!-- <div class="card">
                             <div class="card-body">
                                 <div class="d-md-flex justify-content-between mb-2">
                                     <ul class="nav nav-tabs b-none">
@@ -494,7 +494,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -720,7 +720,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="addnew" role="tabpanel">
+                    <!-- <div class="tab-pane fade" id="addnew" role="tabpanel">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card">
@@ -834,11 +834,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -855,7 +855,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
     </div>
 </div>
 

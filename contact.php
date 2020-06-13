@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-
+<!-- soccer/project/app-contact.html  07 Jan 2020 03:40:20 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,12 +9,13 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>Feedback</title>
+<title>Contact</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css"/>
 <link rel="stylesheet" href="assets/plugins/dropify/css/dropify.min.css">
+<link rel="stylesheet" href="assets/plugins/summernote/dist/summernote.css"/>
 
 <!-- Core css -->
 <link rel="stylesheet" href="assets/css/main.css"/>
@@ -29,7 +30,8 @@
     </div>
 </div> -->
 <!-- Overlay For Sidebars -->
-<?php include"./side-bar.html" ?>
+<?php include "./side-bar.html" ?>
+
 <div id="main_content">
 
     <!-- <div id="header_top" class="header_top">
@@ -336,14 +338,14 @@
                 <div class="page-header">
                     <div class="left">
                         <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Feedback</h1>                        
+                        <h1 class="page-title">Contact</h1>                        
                     </div>
-                    <div class="right">
+                    <!-- <div class="right">
                         <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
                         </div>
-                    <!--<div class="notification d-flex">
+                        <div class="notification d-flex">
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-2" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -463,8 +465,8 @@
                                     <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -472,15 +474,16 @@
             <div class="container-fluid">
                 <div class="row clearfix">
                     <div class="col-lg-12">
-                        <div class="card">
+                    <h3> Help us become better</h3>
+                        <!--<div class="card">
                             <div class="card-body">
                                 <div class="d-md-flex justify-content-between">
                                     <ul class="nav nav-tabs b-none">
                                         <li class="nav-item"><a class="nav-link active" id="list-tab" data-toggle="tab" href="#list"><i class="fa fa-list-ul"></i> List</a></li>
                                         <li class="nav-item"><a class="nav-link" id="grid-tab" data-toggle="tab" href="#grid"><i class="fa fa-th"></i> Grid</a></li>
-                                        <!-- <li class="nav-item"><a class="nav-link" id="addnew-tab" data-toggle="tab" href="#addnew"><i class="fa fa-plus"></i> Add New</a></li> -->
+                                        <li class="nav-item"><a class="nav-link" id="addnew-tab" data-toggle="tab" href="#addnew"><i class="fa fa-plus"></i> Add New</a></li>
                                     </ul>
-                                    <!-- <div class="d-flex align-items-center sort_stat">
+                                    <div class="d-flex align-items-center sort_stat">
                                         <div class="d-flex">
                                             <span class="bh_income">2,5,1,8,3,6,7,5,3,6,7,5</span>
                                             <div class="ml-2">
@@ -495,13 +498,13 @@
                                                 <h5 class="font-16 mb-0">53% Up</h5>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
-                                <!-- <div class="input-group mt-2">
+                                <div class="input-group mt-2">
                                     <input type="text" class="form-control search" placeholder="Search...">
-                                </div> -->
+                                </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -509,6 +512,26 @@
         <div class="section-body">
             <div class="container-fluid">
                 <div class="tab-content">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="summernote">
+                                Hi there,
+                                <br/>
+                                <p>The toolbar can be customized and it also supports various callbacks such as <code>oninit</code>, <code>onfocus</code>, <code>onpaste</code> and many more.</p>
+                                <br/>
+                                <p>Thank you!</p>
+                                <h6>Summer Note</h6>
+                            </div>
+                            <div class="mt-4 text-right">
+                                <!-- <button class="btn btn-warning"><i class="icon-link"></i></button> -->
+                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--danh sách các phản hồi trước-->
                     <div class="tab-pane fade show active" id="list" role="tabpanel">
                         <div class="row clearfix">
                             <div class="col-lg-12">
@@ -721,7 +744,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="grid" role="tabpanel">
+                    <!--chế độ hiển thị theo khung-->
+                    <!-- <div class="tab-pane fade" id="grid" role="tabpanel">
                         <div class="row row-deck">
                             <div class="col-lg-3 col-md-6 col-sm-12">
                                 <div class="card " >
@@ -868,8 +892,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="addnew" role="tabpanel">
+                    </div> -->
+
+                    
+                    <!-- <div class="tab-pane fade" id="addnew" role="tabpanel">
                         <div class="row clearfix">
                             <div class="col-lg-12">
                                 <div class="card">
@@ -907,7 +933,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -965,6 +991,9 @@ $(function() {
     });
 });
 </script>
+<script src="assets/bundles/summernote.bundle.js"></script>
+<script src="assets/js/page/summernote.js"></script>
 </body>
+
 
 </html>
