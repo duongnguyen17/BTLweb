@@ -9,7 +9,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Soccer :: Calendar</title>
+<title>Calendar</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -23,14 +23,14 @@
 
 <body class="font-montserrat">
 <!-- Page Loader -->
-<div class="page-loader-wrapper">
+<!-- <div class="page-loader-wrapper">
     <div class="loader">
     </div>
-</div>
-
+</div> -->
+<?php include "./side-bar.html" ?>
 <div id="main_content">
 
-    <div id="header_top" class="header_top">
+    <!-- <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
                 <a class="header-brand" href="index-2.html"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
@@ -326,7 +326,7 @@
                 <li><a href="javascript:void(0)"><i class="fa fa-tag"></i><span>ContactUs</span></a></li>
             </ul>
         </nav>        
-    </div>
+    </div> -->
 
     <div class="page">
         <div id="page_top" class="section-body top_dark">
@@ -337,7 +337,7 @@
                         <h1 class="page-title">Calendar</h1>
                         
                     </div>
-                    <div class="right">
+                    <!-- <div class="right">
                         <div class="input-icon xs-hide mr-4">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-icon-addon"><i class="fe fe-search"></i></span>
@@ -463,7 +463,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -486,7 +486,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-body">
+        <!-- <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -503,7 +503,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div> -->
     </div>
 </div>
 
